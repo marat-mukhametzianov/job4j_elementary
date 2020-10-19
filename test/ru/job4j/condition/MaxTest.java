@@ -15,7 +15,6 @@ public class MaxTest {
 
         int out = Max.max(left, right);
         assertThat(out, is(expected));
-        System.out.println(out);
     }
 
     @Test
@@ -26,7 +25,6 @@ public class MaxTest {
 
         int out = Max.max(left, right);
         assertThat(out, is(expected));
-        System.out.println(out);
     }
 
     @Test
@@ -37,6 +35,5 @@ public class MaxTest {
 
         int out = Max.max(left, right);
         assertThat(out, is(expected));
-        System.out.println(out);
     }
 }
