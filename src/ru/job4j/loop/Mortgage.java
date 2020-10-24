@@ -6,8 +6,8 @@ public class Mortgage {
         double leftover = amount;
 
         while (leftover > 0) {
-            leftover = leftover + leftover * percent/100 - salary;
-            year ++;
+            leftover = leftover + leftover * percent / 100 - salary;
+            year++;
         }
         return year;
     }
