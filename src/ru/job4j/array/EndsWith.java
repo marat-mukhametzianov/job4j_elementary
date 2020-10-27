@@ -8,6 +8,7 @@ public class EndsWith {
             char wordChar = word[word.length - 1 - i];
             if (postChar != wordChar) {
                 result = false;
+                break;
             }
         }
 
