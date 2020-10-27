@@ -8,6 +8,7 @@ public class ArrayChar {
             char w = word[i];
             if (w != p) {
                 result = false;
+                break;
             }
         }
 
