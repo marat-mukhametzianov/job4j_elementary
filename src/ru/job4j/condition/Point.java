@@ -7,8 +7,8 @@ public class Point {
         double step3 = Math.pow(step1, 2);
         double step4 = Math.pow(step2, 2);
         double step5 = step3 + step4;
-        double rsl = Math.sqrt(step5);
-        return rsl;
+        double result = Math.sqrt(step5);
+        return result;
     }
 
     public static void main(String[] args) {

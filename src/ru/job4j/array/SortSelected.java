@@ -9,7 +9,6 @@ public class SortSelected {
             temp = data[i];
             data[i] = minValueInRange;
             data[indexOfMinValueInRange] = temp;
-
         }
         return data;
     }

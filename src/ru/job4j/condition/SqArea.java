@@ -4,14 +4,14 @@ public class SqArea {
     public static double square(int perimeter, int ratio) {
         double width = perimeter / (2 * (ratio + 1));
         double length = width * ratio;
-        double rsl = width * length;
-        return rsl;
+        double result = width * length;
+        return result;
     }
 
     public static void main(String[] args) {
-        int p = 1;
-        int r = 2;
-        double result1 = SqArea.square(p, r);
-        System.out.println("Perimeter = " + p + "\ncoefficient = " + r + "\narea = " + result1);
+        int petimeter = 1;
+        int ration = 2;
+        double result1 = SqArea.square(petimeter, ration);
+        System.out.println("Perimeter = " + petimeter + "\ncoefficient = " + ration + "\narea = " + result1);
     }
 }

@@ -33,9 +33,9 @@ public class SwitchWeek {
     }
 
     public static void main(String[] args) {
-        SwitchWeek switchWeek = new SwitchWeek();
+        SwitchWeek week = new SwitchWeek();
         for (int i = 1; i < 9; i++) {
-            System.out.println(switchWeek.nameOfDay(i));
+            System.out.println(week.nameOfDay(i));
         }
     }
 }
