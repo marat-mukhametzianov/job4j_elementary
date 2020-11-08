@@ -64,4 +64,31 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void whenAx0y0z0Bx0y0z0Then0() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(0, 0, 0);
+        double expected = 0;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenAx0y0z0Bx1y1z1Then1p732() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(1, 1, 1);
+        double expected = 1.732;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenAx5y10z15Bx1y0z0Then1p732() {
+        Point a = new Point(5, 10, 15);
+        Point b = new Point(1, 0, 0);
+        double expected = 18.466;
+        double out = a.distance3d(b);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
